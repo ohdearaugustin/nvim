@@ -11,10 +11,11 @@ require("config.lazy")({
     coverage_support = true, -- enable coverage extension
     dap_support = true, -- enable dap extension
     lang = {
+      ansible = true,
       clangd = false, -- enable clangd and cmake extension
       docker = true, -- enable docker extension
       elixir = false, -- enable elixir extension
-      go = false, -- enable go extension
+      go = true, -- enable go extension
       java = false, -- enable java extension
       nodejs = true, -- enable nodejs (typescript, css, html, json) extension
       python = true, -- enable python extension

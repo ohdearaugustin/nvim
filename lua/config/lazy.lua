@@ -71,6 +71,9 @@ return function(opts)
       { import = "plugins.extras.test.coverage", enabled = opts.nv.lang.coverage_support },
       -- lazyvim REST extension modules
       { import = "plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
+      -- custom language specific extension modules
+      { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
+      { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
     },
     defaults = {
       -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
