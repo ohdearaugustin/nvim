@@ -35,6 +35,7 @@ return function(opts)
       },
       -- lazyvim copilot extension modules
       { import = "lazyvim.plugins.extras.coding.copilot", enabled = opts.nv.copilot_support },
+      { import = "plugins.extras.coding.copilot", enabled = opts.nv.copilot_support },
       -- lazyvim yanky extension modules
       { import = "lazyvim.plugins.extras.coding.yanky" },
       -- lazyvim dap core extension modules
@@ -54,6 +55,7 @@ return function(opts)
       { import = "lazyvim.plugins.extras.lang.terraform", enabled = opts.nv.lang.terraform },
       { import = "lazyvim.plugins.extras.lang.tex", enabled = opts.nv.lang.tex },
       { import = "lazyvim.plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
+      { import = "lazyvim.plugins.extras.lang.markdown", enabled = opts.nv.lang.markdown },
       -- lazyvim test core extension modules
       { import = "lazyvim.plugins.extras.test.core", enabled = opts.nv.test_support },
       -- lazyvim UI extension modules
@@ -74,6 +76,8 @@ return function(opts)
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
+      { import = "plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
+      { import = "plugins.extras.lang.obsidian", enabled = opts.nv.lang.obsidian },
     },
     defaults = {
       -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
