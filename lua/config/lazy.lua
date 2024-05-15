@@ -71,8 +71,11 @@ return function(opts)
       { import = "plugins.extras.lang.nodejs", enabled = opts.nv.lang.nodejs },
       -- lazyvim coverage extension modules
       { import = "plugins.extras.test.coverage", enabled = opts.nv.lang.coverage_support },
+      -- Import utils
       -- lazyvim REST extension modules
       { import = "plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
+      -- orgmode modules
+      { import = "plugins.extras.util.orgmode", enabled = opts.nv.util.orgmode },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
