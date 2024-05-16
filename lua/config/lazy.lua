@@ -74,8 +74,8 @@ return function(opts)
       -- Import utils
       -- lazyvim REST extension modules
       { import = "plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
-      -- orgmode modules
-      { import = "plugins.extras.util.orgmode", enabled = opts.nv.util.orgmode },
+      -- taskwarrior modules
+      { import = "plugins.extras.util.taskwarrior", enabled = opts.nv.util.taskwarrior },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },

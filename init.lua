@@ -30,7 +30,7 @@ require("config.lazy")({
     rest_support = true, -- enable rest.nvim extension
     test_support = true, -- enable test extension
     util = {
-      orgmode = true, -- enable orgmode extension
+      taskwarrior = true, -- enable taskwarrior extension
     },
   },
   performance = {
