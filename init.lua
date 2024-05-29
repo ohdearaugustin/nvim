@@ -2,7 +2,7 @@
 require("config.lazy")({
   debug = true,
   defaults = {
-    lazy = true,
+    lazy = false,
   },
   nv = {
     colorscheme = "tokyonight",
@@ -32,6 +32,7 @@ require("config.lazy")({
     util = {
       taskwarrior = true, -- enable taskwarrior extension
       windowpicker = true, -- enable windowpicker extension
+      kube_utils = true, -- enable kube_utils extension
     },
   },
   performance = {
