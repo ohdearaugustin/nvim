@@ -76,6 +76,8 @@ return function(opts)
       { import = "plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
       -- taskwarrior modules
       { import = "plugins.extras.util.taskwarrior", enabled = opts.nv.util.taskwarrior },
+      -- windowpicker modules
+      { import = "plugins.extras.util.windowpicker", enabled = opts.nv.util.windowpicker },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },

@@ -31,6 +31,7 @@ require("config.lazy")({
     test_support = true, -- enable test extension
     util = {
       taskwarrior = true, -- enable taskwarrior extension
+      windowpicker = true, -- enable windowpicker extension
     },
   },
   performance = {
@@ -39,4 +40,3 @@ require("config.lazy")({
     },
   },
 })
-require("treesitter-context").toggle()
