@@ -7,7 +7,7 @@ require("config.lazy")({
   nv = {
     colorscheme = "tokyonight",
     codeium_support = false, -- enable codeium extension
-    copilot_support = true, -- enable copilot extension
+    copilot_support = false, -- enable copilot extension
     coverage_support = true, -- enable coverage extension
     dap_support = true, -- enable dap extension
     lang = {
