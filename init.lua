@@ -10,6 +10,9 @@ require("config.lazy")({
     copilot_support = false, -- enable copilot extension
     coverage_support = true, -- enable coverage extension
     dap_support = true, -- enable dap extension
+    lsp = {
+      neoconf = true,
+    },
     lang = {
       ansible = true,
       clangd = false, -- enable clangd and cmake extension
@@ -23,7 +26,7 @@ require("config.lazy")({
       rust = true, -- enable rust extension
       terraform = false, -- enable terraform extension
       tex = false, -- enable tex extension
-      yaml = false, -- enable yaml extension
+      yaml = true, -- enable yaml extension
       obsidian = true,
       markdown = true,
     },
@@ -33,6 +36,7 @@ require("config.lazy")({
       taskwarrior = true, -- enable taskwarrior extension
       windowpicker = true, -- enable windowpicker extension
       kube_utils = true, -- enable kube_utils extension
+      sshfs = true, -- enable sshdfs
     },
   },
   performance = {

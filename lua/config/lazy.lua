@@ -56,6 +56,7 @@ return function(opts)
       { import = "lazyvim.plugins.extras.lang.tex", enabled = opts.nv.lang.tex },
       { import = "lazyvim.plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
       { import = "lazyvim.plugins.extras.lang.markdown", enabled = opts.nv.lang.markdown },
+      { import = "lazyvim.plugins.extras.lsp.neoconf", enabled = opts.nv.lsp.neoconf },
       -- lazyvim test core extension modules
       { import = "lazyvim.plugins.extras.test.core", enabled = opts.nv.test_support },
       -- lazyvim UI extension modules
@@ -80,6 +81,8 @@ return function(opts)
       { import = "plugins.extras.util.windowpicker", enabled = opts.nv.util.windowpicker },
       -- kube_utils modules
       { import = "plugins.extras.util.kube_utils", enabled = opts.nv.util.kube_utils },
+      -- sshdfs modules
+      { import = "plugins.extras.util.sshfs", enabled = opts.nv.util.sshfs },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
