@@ -83,6 +83,8 @@ return function(opts)
       { import = "plugins.extras.util.kube_utils", enabled = opts.nv.util.kube_utils },
       -- sshdfs modules
       { import = "plugins.extras.util.sshfs", enabled = opts.nv.util.sshfs },
+      -- yaml-companion modules
+      { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },

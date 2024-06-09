@@ -63,3 +63,11 @@ local helm_mappings = {
 
 -- Register the Helm keybindings with a specific prefix
 wk.register(helm_mappings, { prefix = "<leader>" })
+
+-- Yaml-Companion
+local yaml_companion_mappings = {
+  y = { "<cmd>Telescope yaml_schema<CR>", "Yaml Companion" },
+}
+
+-- Register the yaml-companion keybindings with a specific prefix
+wk.register(yaml_companion_mappings, { prefix = "<leader>" })

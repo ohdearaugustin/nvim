@@ -37,6 +37,7 @@ require("config.lazy")({
       windowpicker = true, -- enable windowpicker extension
       kube_utils = true, -- enable kube_utils extension
       sshfs = true, -- enable sshdfs
+      yamlcompanion = true, -- enable yaml-companion
     },
   },
   performance = {
