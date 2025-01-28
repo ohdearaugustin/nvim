@@ -38,6 +38,7 @@ require("config.lazy")({
       kube_utils = true, -- enable kube_utils extension
       sshfs = true, -- enable sshdfs
       yamlcompanion = true, -- enable yaml-companion
+      base64 = true, -- enable base64 extension
     },
   },
   performance = {

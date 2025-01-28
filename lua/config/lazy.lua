@@ -62,6 +62,7 @@ return function(opts)
       -- lazyvim UI extension modules
       { import = "lazyvim.plugins.extras.ui.edgy" },
       { import = "lazyvim.plugins.extras.ui.mini-animate" },
+      { import = "lazyvim.plugins.extras.coding.mini-surround" },
       -- lazyvim project extension modules
       { import = "lazyvim.plugins.extras.util.project" },
       -- import/override with your plugins
@@ -85,6 +86,8 @@ return function(opts)
       { import = "plugins.extras.util.sshfs", enabled = opts.nv.util.sshfs },
       -- yaml-companion modules
       { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
+      -- base64 modules
+      { import = "plugins.extras.util.base64", enabled = opts.nv.util.base64 },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
