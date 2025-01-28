@@ -75,7 +75,7 @@ return function(opts)
       { import = "plugins.extras.test.coverage", enabled = opts.nv.lang.coverage_support },
       -- Import utils
       -- lazyvim REST extension modules
-      { import = "plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
+      { import = "lazyvim.plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
       -- taskwarrior modules
       { import = "plugins.extras.util.taskwarrior", enabled = opts.nv.util.taskwarrior },
       -- windowpicker modules
