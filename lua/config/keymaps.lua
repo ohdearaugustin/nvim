@@ -38,36 +38,41 @@ vim.keymap.set("n", "<leader>E", function()
   vim.cmd("Neotree toggle")
 end, { noremap = true, silent = true })
 local neotree_mappings = {
-  e = { "Toggle Neotree" },
-  E = { "Explorer Neotree" },
+  { "<leader>e", "Toggle Neotree" },
+  { "<leader>E", "Explorer Neotree" },
 }
 
-wk.register(neotree_mappings, { prefix = "<leader>" })
+wk.add(neotree_mappings)
 
-local helm_mappings = {
-  k = {
-    name = "Kubernetes",
-    d = { "<cmd>HelmDeployFromBuffer<CR>", "Helm Deploy Buffer to Context" },
-    r = { "<cmd>RemoveDeployment<CR>", "Helm Remove Deployment From Buffer" },
-    T = { "<cmd>HelmDryRun<CR>", "Helm DryRun Buffer" },
-    a = { "<cmd>KubectlApplyFromBuffer<CR>", "Kubectl Apply From Buffer" },
-    D = { "<cmd>DeleteNamespace<CR>", "Kubectl Delete Namespace" },
-    u = { "<cmd>HelmDependencyUpdateFromBuffer<CR>", "Helm Dependency Update" },
-    b = { "<cmd>HelmDependencyBuildFromBuffer<CR>", "Helm Dependency Build" },
-    t = { "<cmd>HelmTemplateFromBuffer<CR>", "Helm Template From Buffer" },
-    K = { "<cmd>OpenK9sSplit<CR>", "Split View K9s" },
-    k = { "<cmd>OpenK9s<CR>", "Open K9s" },
-    l = { "<cmd>ToggleYamlHelm<CR>", "Toggle YAML/Helm" },
-  },
+local kube_utils_mappings = {
+  { "<leader>k", group = "Kubernetes" },
+  { "<leader>kh", group = "Helm" },
+  { "<leader>khT", "<cmd>HelmDryRun<CR>", desc = "Helm DryRun Buffer" },
+  { "<leader>khb", "<cmd>HelmDependencyBuildFromBuffer<CR>", desc = "Helm Dependency Build" },
+  { "<leader>khd", "<cmd>HelmDeployFromBuffer<CR>", desc = "Helm Deploy Buffer to Context" },
+  { "<leader>khr", "<cmd>RemoveDeployment<CR>", desc = "Helm Remove Deployment From Buffer" },
+  { "<leader>kht", "<cmd>HelmTemplateFromBuffer<CR>", desc = "Helm Template From Buffer" },
+  { "<leader>khu", "<cmd>HelmDependencyUpdateFromBuffer<CR>", desc = "Helm Dependency Update" },
+  { "<leader>kk", group = "Kubectl" },
+  { "<leader>kkC", "<cmd>SelectSplitCRD<CR>", desc = "Download CRD Split" },
+  { "<leader>kkD", "<cmd>DeleteNamespace<CR>", desc = "Kubectl Delete Namespace" },
+  { "<leader>kkK", "<cmd>OpenK9s<CR>", desc = "Open K9s" },
+  { "<leader>kka", "<cmd>KubectlApplyFromBuffer<CR>", desc = "Kubectl Apply From Buffer" },
+  { "<leader>kkc", "<cmd>SelectCRD<CR>", desc = "Download CRD" },
+  { "<leader>kkk", "<cmd>OpenK9sSplit<CR>", desc = "Split View K9s" },
+  { "<leader>kkl", "<cmd>ToggleYamlHelm<CR>", desc = "Toggle YAML/Helm" },
+  { "<leader>kl", group = "Logs" },
+  { "<leader>klf", "<cmd>JsonFormatLogs<CR>", desc = "Format JSON" },
+  { "<leader>klv", "<cmd>ViewPodLogs<CR>", desc = "View Pod Logs" },
 }
 
 -- Register the Helm keybindings with a specific prefix
-wk.register(helm_mappings, { prefix = "<leader>" })
+wk.add(kube_utils_mappings)
 
 -- Yaml-Companion
 local yaml_companion_mappings = {
-  y = { "<cmd>Telescope yaml_schema<CR>", "Yaml Companion" },
+  { "<leader>y", "<cmd>Telescope yaml_schema<CR>", desc = "Yaml Companion" },
 }
 
 -- Register the yaml-companion keybindings with a specific prefix
-wk.register(yaml_companion_mappings, { prefix = "<leader>" })
+wk.add(yaml_companion_mappings)

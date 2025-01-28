@@ -1,6 +1,8 @@
 return {
   {
     dir = "/home/augustin/programming/kube-utils-nvim",
-    opts = {},
+    config = function()
+      require("kube-utils-nvim.init").setup()
+    end,
   },
 }
