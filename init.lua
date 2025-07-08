@@ -17,6 +17,7 @@ require("config.lazy")({
       ansible = true,
       clangd = false, -- enable clangd and cmake extension
       docker = false, -- enable docker extension
+      dart = true, -- enable docker extension
       elixir = false, -- enable elixir extension
       go = true, -- enable go extension
       java = false, -- enable java extension
@@ -39,6 +40,7 @@ require("config.lazy")({
       sshfs = true, -- enable sshdfs
       yamlcompanion = true, -- enable yaml-companion
       base64 = true, -- enable base64 extension
+      gen = true, -- enable gen module
     },
   },
   performance = {

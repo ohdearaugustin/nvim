@@ -88,9 +88,12 @@ return function(opts)
       { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
       -- base64 modules
       { import = "plugins.extras.util.base64", enabled = opts.nv.util.base64 },
+      -- gen modules
+      { import = "plugins.extras.util.gen", enabled = opts.nv.util.gen },
       -- custom language specific extension modules
       { import = "plugins.extras.lang.ansible", enabled = opts.nv.lang.ansible },
       { import = "plugins.extras.lang.python", enabled = opts.nv.lang.python },
+      { import = "plugins.extras.lang.dart", enabled = opts.nv.lang.dart },
       { import = "plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
       { import = "plugins.extras.lang.obsidian", enabled = opts.nv.lang.obsidian },
     },
