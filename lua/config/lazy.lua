@@ -78,6 +78,8 @@ return function(opts)
       -- lazyvim coverage extension modules
       { import = "plugins.extras.test.coverage", enabled = opts.nv.lang.coverage_support },
       -- Import utils
+      -- claude modules
+      { import = "plugins.extras.util.claude", enabled = opts.nv.util.claude },
       -- taskwarrior modules
       { import = "plugins.extras.util.taskwarrior", enabled = opts.nv.util.taskwarrior },
       -- windowpicker modules

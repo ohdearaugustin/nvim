@@ -36,6 +36,7 @@ require("config.lazy")({
     rest_support = true, -- enable rest.nvim extension
     test_support = true, -- enable test extension
     util = {
+      claude = true, -- enable claude extension
       taskwarrior = true, -- enable taskwarrior extension
       windowpicker = true, -- enable windowpicker extension
       kube_utils = false, -- enable kube_utils extension
