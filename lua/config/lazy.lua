@@ -35,7 +35,6 @@ return function(opts)
       },
       -- lazyvim copilot extension modules
       { import = "lazyvim.plugins.extras.coding.copilot", enabled = opts.nv.copilot_support },
-      { import = "plugins.extras.coding.copilot", enabled = opts.nv.copilot_support },
       -- lazyvim yanky extension modules
       { import = "lazyvim.plugins.extras.coding.yanky" },
       -- lazyvim dap core extension modules
@@ -49,11 +48,13 @@ return function(opts)
       { import = "lazyvim.plugins.extras.lang.elixir", enabled = opts.nv.lang.elixir },
       { import = "lazyvim.plugins.extras.lang.go", enabled = opts.nv.lang.go },
       { import = "lazyvim.plugins.extras.lang.java", enabled = opts.nv.lang.java },
+      { import = "lazyvim.plugins.extras.lang.json", enabled = opts.nv.lang.json },
       { import = "lazyvim.plugins.extras.lang.python", enabled = opts.nv.lang.python },
       { import = "lazyvim.plugins.extras.lang.ruby", enabled = opts.nv.lang.ruby },
       { import = "lazyvim.plugins.extras.lang.rust", enabled = opts.nv.lang.rust },
       { import = "lazyvim.plugins.extras.lang.terraform", enabled = opts.nv.lang.terraform },
       { import = "lazyvim.plugins.extras.lang.tex", enabled = opts.nv.lang.tex },
+      { import = "lazyvim.plugins.extras.lang.typescript", enabled =  opts.nv.lang.typescript },
       { import = "lazyvim.plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
       { import = "lazyvim.plugins.extras.lang.markdown", enabled = opts.nv.lang.markdown },
       { import = "lazyvim.plugins.extras.lsp.neoconf", enabled = opts.nv.lsp.neoconf },
@@ -65,6 +66,9 @@ return function(opts)
       { import = "lazyvim.plugins.extras.coding.mini-surround" },
       -- lazyvim project extension modules
       { import = "lazyvim.plugins.extras.util.project" },
+      -- lazyvim Extra Utils
+      -- lazyvim REST extension modules
+      { import = "lazyvim.plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
       -- import/override with your plugins
       { import = "plugins" },
       -- lazyvim codeium extension modules
@@ -74,8 +78,6 @@ return function(opts)
       -- lazyvim coverage extension modules
       { import = "plugins.extras.test.coverage", enabled = opts.nv.lang.coverage_support },
       -- Import utils
-      -- lazyvim REST extension modules
-      { import = "lazyvim.plugins.extras.util.rest", enabled = opts.nv.lang.rest_support },
       -- taskwarrior modules
       { import = "plugins.extras.util.taskwarrior", enabled = opts.nv.util.taskwarrior },
       -- windowpicker modules
@@ -84,8 +86,8 @@ return function(opts)
       { import = "plugins.extras.util.kube_utils", enabled = opts.nv.util.kube_utils },
       -- sshdfs modules
       { import = "plugins.extras.util.sshfs", enabled = opts.nv.util.sshfs },
-      -- yaml-companion modules
-      { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
+      -- yaml-companion modules - diasbled because it is not working anymore
+      -- { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
       -- base64 modules
       { import = "plugins.extras.util.base64", enabled = opts.nv.util.base64 },
       -- gen modules

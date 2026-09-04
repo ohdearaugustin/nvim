@@ -21,11 +21,13 @@ require("config.lazy")({
       elixir = false, -- enable elixir extension
       go = true, -- enable go extension
       java = false, -- enable java extension
+      json = true, -- enable json extension
       nodejs = true, -- enable nodejs (typescript, css, html, json) extension
       python = true, -- enable python extension
       ruby = false, -- enable ruby extension
       rust = true, -- enable rust extension
       terraform = false, -- enable terraform extension
+      typescript = true, -- enable typescript extension
       tex = false, -- enable tex extension
       yaml = true, -- enable yaml extension
       obsidian = true,
@@ -36,7 +38,7 @@ require("config.lazy")({
     util = {
       taskwarrior = true, -- enable taskwarrior extension
       windowpicker = true, -- enable windowpicker extension
-      kube_utils = true, -- enable kube_utils extension
+      kube_utils = false, -- enable kube_utils extension
       sshfs = true, -- enable sshdfs
       yamlcompanion = true, -- enable yaml-companion
       base64 = true, -- enable base64 extension
