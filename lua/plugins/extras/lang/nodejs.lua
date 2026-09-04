@@ -36,16 +36,11 @@ return {
 
   -- correctly setup mason lsp extensions
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then
         vim.list_extend(opts.ensure_installed, { "css-lsp", "eslint-lsp", "html-lsp", "stylelint-lsp", "typescript-language-server" })
       end
     end,
   },
-
-  -- import additional language modules from upstream
-  { import = "lazyvim.plugins.extras.lang.json" },
-  { import = "lazyvim.plugins.extras.lang.typescript" }
-
 }
