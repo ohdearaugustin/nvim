@@ -41,4 +41,12 @@ return {
     { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
     { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>", desc = "Deny diff" },
   },
+  {
+  'pittcat/claude-fzf-history.nvim',
+  dependencies = { 'ibhagwan/fzf-lua' },
+  config = function()
+    require('claude-fzf-history').setup()
+  end,
+  cmd = { 'ClaudeHistory', 'ClaudeHistoryDebug' },
+  }
 }
