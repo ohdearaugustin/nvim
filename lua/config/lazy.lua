@@ -88,6 +88,7 @@ return function(opts)
       { import = "plugins.extras.util.kube_utils", enabled = opts.nv.util.kube_utils },
       -- sshdfs modules
       { import = "plugins.extras.util.sshfs", enabled = opts.nv.util.sshfs },
+      { import = "plugins.extras.util.sops", enabled = opts.nv.util.sops },
       -- yaml-companion modules - diasbled because it is not working anymore
       -- { import = "plugins.extras.util.yaml-companion", enabled = opts.nv.util.yamlcompanion },
       -- base64 modules

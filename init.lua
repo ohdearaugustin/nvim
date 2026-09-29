@@ -41,6 +41,7 @@ require("config.lazy")({
       windowpicker = true, -- enable windowpicker extension
       kube_utils = false, -- enable kube_utils extension
       sshfs = true, -- enable sshdfs
+      sops = true, -- enable sops extension
       yamlcompanion = true, -- enable yaml-companion
       base64 = true, -- enable base64 extension
       gen = true, -- enable gen module

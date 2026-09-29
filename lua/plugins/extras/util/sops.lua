@@ -1,4 +1,7 @@
 return {
-    "diogo464/sops.nvim",
-    opts = {}
+    "trixnz/sops.nvim",
+    lazy = false,
+    opts = {
+        disabled = false,
+    }
 }
