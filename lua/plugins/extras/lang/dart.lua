@@ -7,7 +7,7 @@ return {
       "mason.nvim",
       { "mason-org/mason-lspconfig.nvim", config = function() end     },
     },
-    opts = function()
+    opts = function(_, opts)
       local ret = {
         diagnostics = {},
         inlay_hints = {
@@ -66,7 +66,7 @@ return {
         },
         setup = {},
       }
-      return ret
+      return vim.tbl_deep_extend("force", opts, ret)
     end,
   },
 }
