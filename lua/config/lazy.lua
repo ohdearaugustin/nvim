@@ -101,6 +101,8 @@ return function(opts)
       { import = "plugins.extras.lang.dart", enabled = opts.nv.lang.dart },
       { import = "plugins.extras.lang.yaml", enabled = opts.nv.lang.yaml },
       { import = "plugins.extras.lang.obsidian", enabled = opts.nv.lang.obsidian },
+      -- themes
+      { import = "plugins.extras.themes.cyber", enabled = opts.nv.themes.cyber},
     },
     defaults = {
       -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.

@@ -46,6 +46,9 @@ require("config.lazy")({
       base64 = true, -- enable base64 extension
       gen = true, -- enable gen module
     },
+    themes = {
+      cyber = true --enable cyber theme
+    }
   },
   performance = {
     cache = {
